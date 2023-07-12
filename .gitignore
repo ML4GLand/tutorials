@@ -1,6 +1,6 @@
-tutorial_dataset/
-tutorial_logs/
-tutorial_output/
+EUGENe/tutorial_dataset/
+EUGENe/tutorial_logs/
+EUGENe/tutorial_output/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
