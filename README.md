@@ -1,6 +1,6 @@
 # tutorials
 
-Each tutorial addition should be formed as a new floader
+Each tutorial addition should be formed as a new folder
 
 - the folder name is used for the future notebooks
 - single python scripts with converted notebooks (name does not matter)
