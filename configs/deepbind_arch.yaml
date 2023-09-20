@@ -1,0 +1,6 @@
+model:
+  model_name: deepbind_st
+  arch_name: DeepBind
+  arch:
+    input_len: 41
+    output_dim: 1

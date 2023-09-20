@@ -1,0 +1,24 @@
+module: SequenceModule
+model:
+  model_name: Kopp21
+  arch_name: Kopp21CNN
+  arch:
+    input_len: 500
+    output_dim: 1
+    aggr: max
+    filters: [10, 8]
+    conv_kernel_size: [11, 3]
+    maxpool_kernel_size: 30
+    stride: 1
+task: binary_classification
+loss_fxn: bce
+optimizer: adam
+optimizer_kwargs:
+  amsgrad: true
+optimizer_lr: 0.001
+scheduler: reduce_lr_on_plateau
+scheduler_monitor: val_loss_epoch
+scheduler_kwargs:
+  patience: 2
+metric_kwargs:
+  task: binary

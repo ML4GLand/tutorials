@@ -1,0 +1,13 @@
+module: SequenceModule
+model:
+  model_name: deepbind_st
+  arch_name: DeepBind
+  arch:
+    input_len: 41
+    output_dim: 1
+task: regression
+loss_fxn: mse
+optimizer: adam
+optimizer_lr: 0.005
+scheduler_kwargs:
+  patience: 2
