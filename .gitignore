@@ -3,6 +3,11 @@ datasets/
 logs/
 output/
 figures/
+bulk_atac_basepair/log
+bulk_atac_basepair/chrombpnet/bias_model
+bulk_atac_basepair/chrombpnet/chrombpnet
+bulk_atac_basepair/chrombpnet-lite/v*
+*.out
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
