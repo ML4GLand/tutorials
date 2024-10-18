@@ -23,9 +23,9 @@ cmd="chrombpnet bias pipeline \
     -d "ATAC" \
     -g $path_data/hg38.fa \
     -c $path_data/hg38.chrom.sizes \
-    -p $path_data/ENCSR868FGK_K562_ATAC-seq_peaks.bed \
-    -n $path_data/K562_ATAC-seq_negatives.chrombpnet.bed \
-    -fl $path_data/fold_0.json \
+    -p data/peaks_no_blacklist.bed \
+    -n data/output_negatives.bed \
+    -fl ../../data/splits/fold_0.json \
     -b 0.5 \
     -o bias_model \
     -fp K562"

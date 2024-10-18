@@ -1,0 +1,17 @@
+{
+    "batch_size": 64,
+    "in_window": 2114,
+    "out_window": 1000,
+    "verbose": true,
+    "chroms": ["chr1", "chr2", "chr3", "chr4", "chr5", "chr6", "chr7", "chr8", "chr9", "chr10", "chr11", "chr12", "chr13", "chr14", "chr15", "chr16", "chr17", "chr18", "chr19", "chr20", "chr21", "chr22", "chrX", "chrY"],
+ 
+    "sequences": "/cellar/users/aklie/data/datasets/K562_ATAC-seq/data/hg38.fa",
+    "loci": "/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/chrombpnet/bias_model/auxiliary/K562_30K_subsample_peaks.bed",
+    "model": "/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/bpnet-lite/bias_model/K562.bias.torch",
+ 
+    "output": "counts",
+    "ohe_filename": "/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/bpnet-lite/bias_model/auxiliary/interpret_subsample/ohe.npz",
+    "attr_filename": "/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/bpnet-lite/bias_model/auxiliary/interpret_subsample/K562.bias.profile.npz",
+    "n_shuffles": 20,
+    "random_state": 1234
+ }

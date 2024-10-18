@@ -1,0 +1,32 @@
+{
+    "test": [
+        "chr5",
+        "chr10",
+        "chr14",
+        "chr18",
+        "chr20",
+        "chr22"
+    ],
+    "valid": [
+        "chr6",
+        "chr21"
+    ],
+    "train": [
+        "chr1",
+        "chr2",
+        "chr3",
+        "chr4",
+        "chr7",
+        "chr8",
+        "chr9",
+        "chr11",
+        "chr12",
+        "chr13",
+        "chr15",
+        "chr16",
+        "chr17",
+        "chr19",
+        "chrX",
+        "chrY"
+    ]
+}

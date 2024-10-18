@@ -1,0 +1,1 @@
+Standard ENCODE cross-validation folds for human chromosomes according to https://github.com/kundajelab/chrombpnet/wiki/Preprocessing

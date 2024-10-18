@@ -6,7 +6,10 @@ figures/
 bulk_atac_basepair/log
 bulk_atac_basepair/chrombpnet/bias_model
 bulk_atac_basepair/chrombpnet/chrombpnet
-bulk_atac_basepair/chrombpnet-lite/v*
+bulk_atac_basepair/chrombpnet/data
+bulk_atac_basepair/bpnet-lite/bias_model
+bulk_atac_basepair/bpnet-lite/chrombpnet
+bulk_atac_basepair/eugene/bias_model
 *.out
 
 # Byte-compiled / optimized / DLL files
