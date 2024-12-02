@@ -1,0 +1,50 @@
+#
+name: K562_ATAC-seq_chrombpnet_fold_0
+threads: 4
+random_state: 1234
+
+# seqdata
+seqdata:
+  path: "/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/eugene/prep_dataset/0.5/K562_ATAC-seq.minimal.seqdata"
+  seq_var: "seq"
+  cov_var: "cov"
+  fold: "fold_0"
+  seq_length: 2114
+  target_length: 1000
+  max_jitter: 512
+  max_counts: 999999
+  min_counts: 0
+  outlier_threshold: 0.9999
+  neg_sampling_ratio: 0.1
+  
+# model
+model:
+  n_filters: 512
+  n_layers: 8
+  n_outputs: 1
+  alpha: null
+  bias_model: /cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/eugene/bias_model/fold_0/0.5/K562_ATAC-seq_bias_fold_0.torch
+
+# training
+training:
+  learning_rate: 0.001
+  batch_size: 64
+  max_epochs: 50
+  validation_iter: 1000
+  rc_augment: True
+
+# evaluation
+evaluation:
+  batch_size: 256
+
+# attribution subsample
+attribution:
+  batch_size: 32
+  subsample: 30000
+  n_shuffles: 20
+
+# modisco
+modisco:
+  n_seqlets: 50000
+  window: 500
+  motif_db: "/cellar/users/aklie/projects/ML4GLand/tutorials/data/motifs.meme.txt"

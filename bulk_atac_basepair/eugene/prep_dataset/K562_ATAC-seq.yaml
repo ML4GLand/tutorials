@@ -1,0 +1,33 @@
+#
+name: K562_ATAC-seq
+threads: 4
+random_state: 1234
+
+# seqdata
+seqdata:
+  fasta: "/cellar/users/aklie/data/ref/genomes/hg38/hg38.fa"
+  seq_var: "seq"
+  bws: ["/cellar/users/aklie/data/datasets/SeqDatasets/K562_ATAC-seq/data/K562_ATAC-seq_unstranded_counts.bw"]
+  bw_names: ["SC.delta"]
+  cov_var: "cov"
+  loci: "/cellar/users/aklie/data/datasets/SeqDatasets/K562_ATAC-seq/data/ENCSR868FGK_K562_ATAC-seq_peaks_no_blacklist.bed"
+  batch_size: 10000
+  fixed_length: 2114
+  target_length: 1000
+  alphabet: "DNA"
+  upper_case: false
+  add_rev_comp: false
+  max_jitter: 512
+
+# negative sampling
+negatives:
+  gc_bin_width: 0.02
+  max_n_perc: 0.1
+  signal: "/cellar/users/aklie/data/datasets/SeqDatasets/K562_ATAC-seq/data/K562_ATAC-seq_unstranded_counts.bw"
+  signal_beta: 0.5
+  in_window: 2114
+  out_window: 1000
+  random_state: 1234
+  
+# train/valid/test split
+splits: /cellar/users/aklie/projects/ML4GLand/tutorials/data/splits/ENCODE_cross-val.json

@@ -1,0 +1,25 @@
+#
+name: HepG2_WGBS
+threads: 4
+random_state: 1234
+
+# seqdata
+seqdata:
+  fasta: "/cellar/users/aklie/data/ref/genomes/hg38/hg38.fa"
+  seq_var: "seq"
+  bws:
+    - "/cellar/users/aklie/data/datasets/SeqDatasets/HepG2_WGBS/processed/HepG2_WGBS_CpG_methylation_coverage_rep1.bigWig"
+    - "/cellar/users/aklie/data/datasets/SeqDatasets/HepG2_WGBS/processed/ENCFF782HWK_HepG2_WGBS_CpG_sites_coverage_rep1.bigWig"
+  bw_names: ["CpG_methylation_coverage_rep1", "CpG_sites_coverage_rep1"]
+  cov_var: "cov"
+  loci: "/cellar/users/aklie/data/ref/genomes/hg38/windows/hg38.5kb_windows.bed"
+  batch_size: 10000
+  fixed_length: 5000
+  target_length: 5000
+  alphabet: "DNA"
+  upper_case: false
+  add_rev_comp: false
+  max_jitter: 0
+  
+# train/valid/test split
+splits: /cellar/users/aklie/projects/ML4GLand/tutorials/data/splits/ENCODE_cross-val.json
