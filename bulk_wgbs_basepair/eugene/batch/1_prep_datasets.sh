@@ -5,9 +5,9 @@ script_path=scripts/prep_dataset.sh
 job_name=prep_dataset
 partition=carter-compute
 cpus_per_task=4
-mem=32G
+mem=64G
 time="14-00:00:00"
-output_path="/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_atac_basepair/eugene/batch/slurm_logs/%x.%A.%a.out"
+output_path="/cellar/users/aklie/projects/ML4GLand/tutorials/bulk_wgbs_basepair/eugene/batch/slurm_logs/%x.%A.%a.out"
 array="1-$num%$num"
 
 # Inputs
